@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>home</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+</head>
+<body style="background-color: #0dcaf0">
+<center><u><h2>Welcome to the Home Page, <span style="font-size: larger; text-decoration: underline; color: #6610f2">{{ member.firstname }}</span> </h2></u></center>
+
+<br><br>
+<center>
+<a href="{% url 'sacco' %}" class="btn btn-warning" style="width: 250px; margin-left: 50px">View Sacco Timetables</a>
+
+<a href="{% url 'login' %}" class="btn btn-warning" style="width: 250px">Logout</a>
+</center>
+</body>
+</html>
